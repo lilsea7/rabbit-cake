@@ -1,0 +1,56 @@
+.favorites-container {
+  padding: 20px;
+}
+
+.favorites-container h1 {
+  font-size: 30px;
+  color: #3d232a;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+}
+
+.favorites-empty {
+  text-align: center;
+  padding: 50px;
+  color: #888;
+}
+
+.favorites-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.favorite-item {
+  border: 1px solid #FFDDD2;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.favorite-item:hover {
+  transform: scale(1.05);
+}
+
+.favorite-item-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.favorite-item-info {
+  padding: 10px;
+  text-align: center;
+}
+
+.favorite-item-name {
+  font-size: 16px;
+  color: #3d232a;
+  margin: 5px 0;
+}
+
+.favorite-item-price {
+  font-size: 14px;
+  color: #e05a7a;
+}

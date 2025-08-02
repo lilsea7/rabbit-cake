@@ -1,0 +1,57 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 4%;
+}
+.navbar .logo{
+    width: max(10%,100px);
+}
+.navbar .profile{
+    width: 40px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+}
+
+.logo {
+  height: 40px;
+}
+
+.profile-container {
+  position: relative;
+  display: inline-block;
+}
+
+.profile {
+  height: 40px;
+  cursor: pointer;
+}
+
+.nav-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  list-style: none;
+  padding: 5px 0;
+  margin: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+    min-width: 180px;  
+}
+
+.nav-dropdown li {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.nav-dropdown li:hover {
+  background-color: #f0f0f0;
+}

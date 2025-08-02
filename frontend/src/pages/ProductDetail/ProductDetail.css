@@ -1,0 +1,112 @@
+.product-detail {
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-detail-container {
+  display: flex;
+  gap: 30px;
+}
+
+.product-image {
+  flex: 1;
+  position: relative;
+}
+
+.product-image img {
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.product-image .hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.product-image:hover .hover-image {
+  opacity: 1;
+}
+
+.product-info {
+  flex: 1;
+  padding: 20px;
+}
+
+.product-info h1 {
+  color: #3d232a;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.rating img {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 24px;
+  color: #e05a7a;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.quantity {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.add-to-cart, .cart-counter button {
+  padding: 10px 20px;
+  background-color: #e05a7a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover, .cart-counter button:hover {
+  background-color: #e05a7a;
+}
+
+.cart-counter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* .cart-counter button {
+  width: 30px;
+  height: 30px;
+} */
+
+/* Style mới cho phần mô tả */
+.product-description {
+  margin-top: 40px; /* Khoảng cách từ container trên */
+  padding: 20px;
+  background-color: #f9f9f9; /* Nền nhẹ để nổi bật */
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+}
+
+.product-description h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.product-description p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6; /* Tăng khoảng cách dòng cho dễ đọc */
+  max-width: 100%; /* Đảm bảo không vượt quá container */
+  word-wrap: break-word; /* Ngắt từ nếu quá dài */
+}

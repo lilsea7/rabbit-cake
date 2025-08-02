@@ -1,0 +1,327 @@
+/* 
+
+.place-order {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 100px;
+}
+
+.place-order-left {
+    width: 100%;
+    max-width: max(30%, 500px);
+}
+
+.place-order-left .title {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.place-order-left input {
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c5c5c5;
+    border-radius: 4px;
+    outline-color: #FFB9B9;
+}
+
+.place-order-left .multi-fields {
+    display: flex;
+    gap: 10px;
+}
+
+.place-order-right {
+    width: 100%;
+    max-width: max(40%, 500px);
+}
+
+.place-order .cart-total button {
+    margin-top: 30px;
+}
+
+/* Thêm style cho phần lựa chọn thanh toán 
+.payment-options {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #c5c5c5;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.payment-options label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.payment-options input[type="radio"] {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+    accent-color: #FFACC7; /* Màu của radio button, phù hợp với theme 
+}
+
+.payment-options input[type="radio"]:checked {
+    background-color: #FFACC7; /* Màu khi được chọn 
+}
+
+.payment-options input[type="radio"]:disabled + label {
+    color: #888;
+    cursor: not-allowed;
+}
+ */
+
+
+.place-order {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 50px;
+  margin-top: 100px;
+  padding: 20px 60px;
+  background-color: #fff6f7;
+}
+
+.place-order-left {
+  width: 100%;
+  max-width: max(30%, 500px);
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.place-order-left .title {
+  font-size: 30px;
+  font-weight: 600;
+  color: #e05a7a;
+  margin-bottom: 50px;
+}
+
+.place-order-left input {
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #c5c5c5;
+  border-radius: 4px;
+  outline-color: #FFB9B9;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.place-order-left input:focus {
+  border-color: #e05a7a;
+}
+
+.place-order-left .multi-fields {
+  display: flex;
+  gap: 10px;
+}
+
+.place-order-right {
+  width: 100%;
+  max-width: max(40%, 500px);
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.place-order .cart-total button {
+  margin-top: 30px;
+  width: 100%;
+  padding: 12px;
+  background-color: #e05a7a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.place-order .cart-total button:hover {
+  background-color: #c94a6a;
+}
+
+.place-order .cart-total button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Thêm style cho phần lựa chọn thanh toán */
+.payment-options {
+  margin: 20px 0;
+  padding: 15px;
+  border: 1px solid #c5c5c5;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+.payment-options:hover {
+  border-color: #FFACC7;
+}
+
+.payment-options label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.payment-options label:hover {
+  color: #e05a7a;
+}
+
+.payment-options input[type="radio"] {
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+  accent-color: #FFACC7;
+  cursor: pointer;
+}
+
+.payment-options input[type="radio"]:checked {
+  background-color: #FFACC7;
+}
+
+.payment-options input[type="radio"]:disabled + label {
+  color: #888;
+  cursor: not-allowed;
+}
+
+/* Modal Styles */
+.success-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+.success-modal {
+  background: linear-gradient(135deg, #e05a7a, #ff8c9d);
+  border-radius: 15px;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  animation: popIn 0.3s ease forwards;
+}
+
+.success-modal-content h2 {
+  color: #fff;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.success-modal-content p {
+  color: #fff;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.success-modal-close {
+  background: #fff;
+  color: #e05a7a;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.success-modal-close:hover {
+  background: #f8b6c7;
+  color: #fff;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes popIn {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .place-order {
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    margin-top: 50px;
+  }
+
+  .place-order-left,
+  .place-order-right {
+    max-width: 100%;
+  }
+
+  .place-order-left .title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .place-order-left input {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .place-order .cart-total button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .payment-options {
+    padding: 10px;
+    margin: 15px 0;
+  }
+
+  .payment-options label {
+    font-size: 14px;
+  }
+
+  .success-modal {
+    padding: 15px;
+    max-width: 300px;
+  }
+
+  .success-modal-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .success-modal-content p {
+    font-size: 1rem;
+  }
+
+  .success-modal-close {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
