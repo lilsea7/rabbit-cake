@@ -228,7 +228,7 @@ body, .landingpage-container {
   width: 100%;
   display: flex;
   gap: 80px;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .lp-why-bake-left {
