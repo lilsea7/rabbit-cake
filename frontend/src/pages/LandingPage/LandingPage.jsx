@@ -1,5 +1,5 @@
 import React from 'react';
-import './landingpage.css';
+import './LandingPage.css';
 import { assets } from '../../assets/assets';
 import { Link } from 'react-router-dom'; // Import Link từ react-router-dom
 
