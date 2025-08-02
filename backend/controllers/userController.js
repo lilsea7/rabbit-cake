@@ -78,9 +78,9 @@ const loginUser = async (req, res) => {
 
     let redirectUrl = '/';
     if (email.endsWith('@gmail.com')) {
-      redirectUrl = 'http://localhost:5174';
+      redirectUrl = 'https://rabbit-cake.onrender.com';
     } else if (email.endsWith('@rabbitcake.com')) {
-      redirectUrl = 'http://localhost:5173';
+      redirectUrl = 'https://rabbit-cake-admin.onrender.com';
     }
     res.json({ success: true, token, redirectUrl });
   } catch (error) {
