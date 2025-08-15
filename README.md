@@ -1,20 +1,31 @@
+Rabbit Cake - Online Cake Ordering System (MERN Stack)
+Rabbit Cake is an online cake ordering application built with the MERN Stack (MongoDB, Express.js, React.js, Node.js) and deployed on Render.
+Users can browse the cake catalog, view product details, add items to their cart, place orders, and make online payments.
 
-Getting Started
-First, run the development server:
+Key Features
+Browse product list (cakes)
+View detailed information for each product
+Add/Remove products from the cart
+Place orders and manage order history
+User registration/login
+Authentication with JWT
+Admin panel: manage products and orders
 
-npm run dev
+Technologies Used
+Frontend
+React.js
+React Router DOM
+Axios
+CSS Modules 
 
-Open http://localhost:3000 with your browser to see the result.
+Backend
+Node.js
+Express.js
+MongoDB & Mongoose
+JSON Web Token (JWT)
+bcryptjs
 
-You can start editing the page by modifying app/page.tsx. The page auto-updates as you edit the file.
+Deployment
+Render (Backend & Frontend)
 
-This project uses next/font to automatically optimize and load Geist, a new font family for Vercel.
-
-Learn More
-To learn more about Next.js, take a look at the following resources:
-
-Next.js Documentation - learn about Next.js features and API.
-Learn Next.js - an interactive Next.js tutorial.
-You can check out the Next.js GitHub repository - your feedback and contributions are welcome!
-
-Deploy on Render
+MongoDB Atlas (Database)
